@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flame Coffee Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="loading" class="loading" style="display: none;">
+    <div class="spinner"></div>
+</div>
+
+
+<div class="hero">
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')">EN</button>
+        <button onclick="switchLanguage('pt')">PT</button>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="logo">
+            <!-- Замените путь на свой логотип -->
+            <img src="23.png" alt="Логотип">
+        </div>
+
+        <div class="text-block">
+            <h1>Your Coffee Machine Experts in Portugal</h1>
+            <p>Keep Your Coffee Flowing<br>Minimal hassle. Maximum taste</p>
+            <button class="btn" onclick="window.location.href = '#contact';">Urgent departure</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchLanguage(lang) {
+        if (lang === 'en') {
+            document.querySelector('.text-block h1').textContent = 'Your Coffee Machine Experts in Portugal';
+            document.querySelector('.text-block p').innerHTML = 'Keep Your Coffee Flowing<br>Minimal hassle. Maximum taste';
+            document.querySelector('.btn').textContent = 'Urgent departure';
+        } else if (lang === 'pt') {
+            document.querySelector('.text-block h1').textContent = 'Especialistas em Máquinas de Café em Portugal';
+            document.querySelector('.text-block p').innerHTML = 'Mantenha o seu café a fluir<br>Mínimo stress. Máximo sabor';
+            document.querySelector('.btn').textContent = 'Saída urgente';
+        }
+    }
+</script>
+
+
+<section id="about" class="about-section">
+    <div class="about-container" id="about-sec">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+                At <strong>FLAME Coffee Service</strong>, we specialize in fast, professional maintenance and repair of premium coffee equipment. Our team is certified by <strong>La Marzocco</strong> and experienced with multiple brands.
+            </p>
+
+            <p>
+                We want every guest to enjoy coffee brewed on properly serviced and calibrated machines — to consciously taste the difference and get the most pleasure from every cup.
+            </p>
+
+            <p>
+                Our goal is not only repair and maintenance, but also fostering a culture of understanding how the condition of equipment impacts coffee quality and the overall business.
+            </p>
+
+            <p><strong>What sets us apart</strong></p>
+
+            <p>
+                <strong>• Deep understanding of the coffee process</strong><br>
+                We know not only how the equipment works, but also how its condition affects the taste. That’s why our service focuses not only on functionality, but also on the result in the cup.
+            </p>
+
+            <p>
+                <strong>• Modern approach to service</strong><br>
+                We work cleanly, carefully, and professionally. We have standards, unified processes, and respect for the client’s establishment.
+            </p>
+
+            <p>
+                <strong>• Flexible service formats</strong><br>
+                We offer subscriptions, equipment rental with service, one-time call-outs, and on-demand support. The client can choose the format that best suits their business.
+            </p>
+
+            <p>
+                <strong>• Transparent terms and fair pricing</strong><br>
+                Every service is clearly described in advance. Costs are agreed upon before any work begins. No unexpected charges or unclear services.
+            </p>
+
+            <p>
+                <strong>• Expertise in equipment development and manufacturing</strong><br>
+                We have hands-on experience in creating coffee machines, which allows us to find unconventional solutions and understand the equipment on a deeper level.
+            </p>
+
+            <p>
+                <strong>• Simple and clear communication</strong><br>
+                We explain the issue, the ways to resolve it, and how it affects the equipment and coffee quality — without technical jargon unless necessary.
+            </p>
+            <small>Trusted by cafes, roasteries, and hospitality businesses across Portugal.</small>
+        </div>
+
+    </div>
+</section>
+
+<div class="wrapper">
+    <h1 class="main-title">Our Services</h1>
+
+    <div class="grid-services">
+        <div class="service-box">
+            <h3>1. Installation and Commissioning</h3>
+            <ul>
+                <li>Consulting and equipment selection</li>
+                <li>Installation of coffee machines and grinders</li>
+                <li>Setup and calibration of coffee machines and grinders</li>
+                <li>Installation and maintenance of Brita filtration systems</li>
+                <li>Staff training and onboarding</li>
+            </ul>
+            <span class="tag-price">from 60€+Iva</span>
+        </div>
+        <div class="service-box">
+            <h3>2. Maintenance and Repair</h3>
+            <ul>
+                <li>Emergency engineer call-out</li>
+                <li>Equipment diagnostics</li>
+                <li>Maintenance and cleaning of coffee machines and grinders</li>
+                <li>Overhaul of coffee machines</li>
+                <li>Customization and tuning of coffee machines</li>
+            </ul>
+            <span class="tag-price">from 60€ + iva</span>
+        </div>
+        <div class="service-box">
+            <h3>3. Spare Parts and Accessories
+            </h3>
+            <ul>
+                <li>Selection and sale of spare parts for coffee machines and grinders</li>
+                <li> Supply of cleaning and maintenance products for equipment</li>
+                <li>Sale of barista accessories</li>
+            </ul>
+            <span class="tag-price">10€+iva</span>
+        </div>
+        <div class="service-box">
+            <h3>4. Coffee Machine and Grinder Rental</h3>
+            <ul>
+                <li>Technical maintenance and support included throughout the rental period</li>
+                <li>Savings on initial investment and capital expenses</li>
+                <li>Option to upgrade or replace equipment as your business grows and evolves</li>
+                <li>Availability of short-term and long-term rental options for seasonal or temporary projects</li>
+            </ul>
+            <span class="tag-price">From 150€+iva</span>
+        </div>
+
+
+
+        <div class="service-box full-width">
+            <h3>5. Service Subscription</h3>
+            <ul>
+                <strong>Includes:</strong>
+                <li>✔ Professional cleaning of grinders, including calibration — for consistent grinding and perfect coffee taste.</li>
+                <li>✔ Inspection of the coffee machine — detecting potential issues before they turn into serious problems.</li>
+                <strong>Additional subscription benefits:</strong>
+                <li>✅ 10% discount on all subsequent engineer visits within the month.</li>
+                <li>✅ 10% discount on spare parts, including filters and cleaning supplies.</li>
+                <br>
+                <li>Scheduled maintenance with no downtime: All work is performed regularly, reducing the risk of equipment breakdowns and malfunctions.
+                </li>
+                <li>Fixed cost: A clear and predictable monthly payment helps you better plan your budget.</li>
+                <li>Priority service: Subscribers receive priority when calling an engineer and for urgent repairs.
+                </li>
+                <li>Time and effort savings: You don’t need to track maintenance schedules or look for specialists — we handle everything for you.
+                </li>
+            </ul>
+            <span class="tag-price">From 50€+iva</span>
+        </div>
+
+    </div>
+</div>
+
+<div class="client-showcase" id="brands">
+    <div style="max-width: 1200px; margin: 0 auto;padding: 20px;"><h2>Brands We Work With</h2></div>
+
+    <div class="logo-grid">
+        <div class="logo-container">
+            <img src="logo-clients/la_marzocco.png" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/15.jpg" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/1.png" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/2.png" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/3.png" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/4.png" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/5.png" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/6.png" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/7.webp" class="logo-image" alt="Client Logo">
+        </div>
+        <div class="logo-container">
+            <img src="logo-clients/8.svg" class="logo-image" alt="Client Logo">
+        </div>
+    </div>
+</div>
+
+<section class="cases">
+    <div class="container2">
+        <h2>OUR CLIENTS</h2>
+
+        <div class="cards">
+            <!-- Первый ряд -->
+            <div class="card wide" style="background-image: url('12/flor.webp');cursor: pointer" onclick="window.location.href = 'https://flordaselva.com';">
+                <div class="card-content">
+                    <h3>FLOR da SELVA <span>Roasters</span></h3>
+                </div>
+            </div>
+
+            <div class="card tall" style="background-image: url('12/liberty-lisbon.png.webp');cursor: pointer" onclick="window.location.href = 'https://libertylisbon.com';">
+                <div class="card-content">
+                    <h3>Liberty <span>coffee, wine, books</span></h3>
+                </div>
+            </div>
+
+            <!-- Второй ряд -->
+            <div class="card" style="background-image: url('12/curva.jpeg');cursor: pointer" onclick="window.location.href = 'https://www.instagram.com/curvalisboa?igsh=MW10MDg5eXFqZDRkcQ==';">
+                <div class="card-content">
+                    <h3>Curvalisboa</h3>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('12/wave.jpg');cursor: pointer" onclick="window.location.href = 'https://www.instagram.com/waveroasters?igsh=MWJzNGIzaW8ybXpycw==';">
+                <div class="card-content">
+                    <h3>Waveroasters <span>Roasters</span></h3>
+                </div>
+            </div>
+
+            <!-- Третий ряд -->
+            <div class="card wide" style="background-image: url('12/RR-spicy-flavors.webp');cursor: pointer" onclick="window.location.href = 'https://theroyalrawness.com/?srsltid=AfmBOoq5QqsaBspyXPjxgVtlDkmETaJbcaDg7aSXeZn2mhNzGO7MnZEq';">
+                <div class="card-content">
+                    <h3>THE ROYAL RAWNESS <span>Roasters</span></h3>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('12/acento.png');cursor: pointer" onclick="window.location.href = 'https://www.instagram.com/acento.coffee/';">
+                <div class="card-content">
+                    <h3>Acento <span>coffee</span></h3>
+                </div>
+            </div>
+
+            <!-- Четвертый ряд -->
+            <div class="card" style="background-image: url('12/sense.jpg');cursor: pointer" onclick="window.location.href = 'https://www.instagram.com/sense.of.coffee?igsh=bHd5NnlnMXlicDRq';">
+                <div class="card-content">
+                    <h3>SENSE OF COFFEE</h3>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('12/roaster_discharge_color-1024x1024.webp');cursor: pointer" onclick="window.location.href = 'https://roastberry.pt/en/';">
+                <div class="card-content">
+                    <h3>RoastBerry <span>COFFEE</span></h3>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('789456.jpg');cursor: pointer" onclick="window.location.href = 'https://www.instagram.com/buracaroasters?igsh=OW9tMGxvYnAzM2Vs';">
+                <div class="card-content">
+                    <h3>Buracaroasters <span>Roasters</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>service@flamecoffee.eu | +351912078991</p>
+        <p>We'd love to hear from you. Reach out to us via phone, email, or through our social media.</p>
+
+        <div class="form-wrapper">
+            <h1>Leave a request</h1>
+            <p>and I will answer you as soon as possible</p>
+            <form id="contact-form">
+                <input type="email" name="email" placeholder="Your email address" required />
+                <input type="text" name="name" placeholder="Your name" required />
+                <textarea name="text" placeholder="Tell us briefly about your request" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Предотвращает стандартное действие формы
+
+                document.getElementById('loading').style.display = 'flex';
+
+                // Получение данных формы
+                const formData = new FormData(this);
+
+                // Отправка данных через AJAX
+                fetch('send_mail.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        alert(data); // Сообщение об успешной отправке
+                        // Очистка формы или закрытие всплывающего окна
+                        document.getElementById('contact-form').reset();
+                        // Скрытие анимации загрузки
+                        document.getElementById('loading').style.display = 'none';
+                    })
+                    .catch(error => {
+                        console.error('Ошибка:', error);
+                        alert('Произошла ошибка при отправке сообщения.');
+                        // Скрытие анимации загрузки
+                        document.getElementById('loading').style.display = 'none';
+                    });
+            });
+        </script>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/flame_coffee_service?igsh=ZnE3OG5jdjZldjJh" target="_blank">
+                <div class="social-box">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+            </a>
+            <a href="https://wa.me/+351912078991" target="_blank">
+                <div class="social-box">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </div>
+            </a>
+            <a href="https://t.me/alexflamecoffee" target="_blank">
+                <div class="social-box">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const message = document.getElementById('responseNote');
+        message.style.display = 'block';
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
